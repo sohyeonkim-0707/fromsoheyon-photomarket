@@ -4,9 +4,9 @@ import { MouseEvent, Fragment } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const FOOTER_MENU = [
-  // { name: "피동보다 능동", page: "/" },
-  { name: "Shop the Photos", page: "/shop" },
-  { name: "About 피동보다 능동", page: "/about" },
+  { name: "FILMS", page: "/shop" },
+  { name: "CONTACT", page: "/about" },
+  { name: "INSTAGRAM", page: "/about" },
 ];
 
 export default function Footer() {

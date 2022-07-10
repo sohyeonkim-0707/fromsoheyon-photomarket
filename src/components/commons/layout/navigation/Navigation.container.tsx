@@ -1,14 +1,14 @@
 import { MouseEvent, Fragment } from "react";
 import { useRouter } from "next/router";
 import { v4 as uuidv4 } from "uuid";
-import * as S from "./Header.styles";
+import * as S from "./Navigation.styles";
 
 const HEADER_MENU = [
-  // { name: "피동보다 능동", page: "/" },
-  { name: "SHOP", page: "/shop" },
   { name: "ABOUT", page: "/about" },
-  { name: "LOGIN", page: "/login" },
+  { name: "SHOP", page: "/shop" },
+  { name: "COMMUNITY", page: "/community" },
   { name: "CART", page: "/cart" },
+  { name: "LOGIN", page: "/login" },
 ];
 
 export default function Navigation() {

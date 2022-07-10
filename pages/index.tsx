@@ -1,5 +1,6 @@
 // 메인 페이지
 // react slick 사용하기
+
 import styled from "@emotion/styled";
 
 const Wrapper = styled.div`
