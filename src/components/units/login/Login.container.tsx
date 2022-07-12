@@ -7,5 +7,6 @@ export default function Login() {
   const onClickSignUp = () => {
     router.push("/signup");
   };
+
   return <LoginUI onClickSignUp={onClickSignUp} />;
 }
