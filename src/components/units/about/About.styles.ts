@@ -7,7 +7,6 @@ export const Container = styled.main`
 export const Wrapper = styled.section`
   display: flex;
   flex-direction: row;
-  /* background-color: beige; */
   margin-bottom: 70px;
 `;
 
