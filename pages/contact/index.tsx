@@ -1,3 +1,5 @@
-export default function Contact() {
-  return <div>연결페이지</div>;
+import Contact from "../../src/components/units/contact/Contact.container";
+
+export default function ContactPage() {
+  return <Contact />;
 }
