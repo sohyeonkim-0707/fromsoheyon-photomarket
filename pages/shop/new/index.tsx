@@ -1,1 +1,3 @@
-// 판매사진 등록하기
+export default function ShopNewPage() {
+  return <ShopWrit />;
+}

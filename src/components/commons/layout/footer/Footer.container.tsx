@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const FOOTER_MENU = [
   { name: "FILMS", page: "/shop" },
-  { name: "CONTACT", page: "/about" },
+  { name: "CONTACT", page: "/contact" },
   { name: "INSTAGRAM", page: "/about" },
 ];
 
