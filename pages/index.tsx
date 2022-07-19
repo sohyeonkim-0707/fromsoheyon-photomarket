@@ -18,6 +18,8 @@ export default function first() {
   const settings = {
     // 아래 버튼
     dots: false,
+    // 화살표
+    arrows: false,
     // 반복
     infinite: true,
     // 한 화면에 보이는 이미지 수
@@ -29,6 +31,7 @@ export default function first() {
     speed: 3000,
     // 넘어가는 속도
     autoplaySpeed: 2000,
+    // css easing 모션 함수
     cssEase: "linear",
   };
 

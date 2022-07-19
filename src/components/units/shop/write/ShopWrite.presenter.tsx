@@ -1,3 +1,4 @@
+import Upload from "../../../commons/uploads/upload.container";
 import * as S from "./ShopWrite.styles";
 
 export default function ShopWriteUI() {
@@ -5,7 +6,8 @@ export default function ShopWriteUI() {
     <S.Container>
       <S.Wrapper>
         <S.left>
-          <S.Photo></S.Photo>
+          <Upload />
+          {/* <S.UploadBtn>Upload your photo</S.UploadBtn> */}
         </S.left>
 
         <S.right>

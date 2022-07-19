@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const Container = styled.main`
   padding: 191px 214px 100px 275px;
-  /* background-color: beige; */
 `;
 
 export const Wrapper = styled.div`
@@ -15,11 +14,28 @@ export const left = styled.section`
   /* border: 1px solid red; */
 `;
 
-export const Photo = styled.img`
-  /* border: 1px solid red; */
+export const Photo = styled.div`
+  border: 1px solid #d9d9d9;
   width: 590px;
   height: 800px;
-  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const UploadBtn = styled.button`
+  background: white;
+  outline: none;
+  cursor: pointer;
+  width: 225px;
+  height: 61px;
+  border: 1px solid #d9d9d9;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
 `;
 
 export const right = styled.section`
@@ -28,13 +44,11 @@ export const right = styled.section`
 `;
 
 export const Inner = styled.div`
-  /* border: 1px solid red; */
   width: 600px;
   margin-bottom: 42px;
 `;
 
 export const InnerWrapeer = styled.div`
-  /* background-color: yellow; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
