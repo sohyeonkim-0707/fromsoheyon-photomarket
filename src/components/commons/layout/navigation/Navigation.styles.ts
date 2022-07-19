@@ -8,8 +8,8 @@ export const Wrapper = styled.nav`
   width: 100%;
   height: 100px;
   padding: 0 10%;
-  /* background-color: beige; */
   line-height: 100px;
+  z-index: 2;
 `;
 
 export const Logo = styled.h1`
@@ -19,6 +19,7 @@ export const Logo = styled.h1`
   font-size: 30px;
   text-align: center;
   cursor: pointer;
+  z-index: 3;
 `;
 
 export const MenuList = styled.li`
@@ -30,4 +31,5 @@ export const MenuList = styled.li`
   text-align: center;
   list-style: none;
   cursor: pointer;
+  z-index: 3;
 `;
