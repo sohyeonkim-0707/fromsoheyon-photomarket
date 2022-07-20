@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Container = styled.main`
+export const Container = styled.form`
   padding: 191px 214px 100px 275px;
 `;
 
@@ -12,30 +12,6 @@ export const Wrapper = styled.div`
 
 export const left = styled.section`
   /* border: 1px solid red; */
-`;
-
-export const Photo = styled.div`
-  border: 1px solid #d9d9d9;
-  width: 590px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const UploadBtn = styled.button`
-  background: white;
-  outline: none;
-  cursor: pointer;
-  width: 225px;
-  height: 61px;
-  border: 1px solid #d9d9d9;
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
 `;
 
 export const right = styled.section`
@@ -89,7 +65,7 @@ export const InputText3 = styled.input`
   border: 1px solid #d9d9d9;
 `;
 
-export const Bottom = styled.div`
+export const BottomWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -119,7 +95,15 @@ export const BackBtn = styled.button`
   }
 `;
 
+export const SubmitBtn = styled(BackBtn)`
+  background-color: ${(props) => (props.isActive ? "#184124" : "")};
+  color: ${(props) => (props.isActive ? "white" : "")};
+`;
+
 export const CancleBtn = styled(BackBtn)`
   margin-left: 31px;
 `;
-export const EditBtn = styled(BackBtn)``;
+
+export const Error = styled.div`
+  color: red;
+`;
