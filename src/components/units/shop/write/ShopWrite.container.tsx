@@ -10,7 +10,7 @@ import { CREATE_USED_ITEM } from "./ShopWrite.queris";
 
 export default function ShopWrite(props: IShopWriteProps) {
   const router = useRouter();
-  // react-hook-form
+
   const { register, handleSubmit, formState } = useForm({
     resolver: yupResolver(schema),
   });

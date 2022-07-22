@@ -19,7 +19,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/commons/uploads/upload.styles.tx"
+    "src/components/commons/uploads/upload.styles.tx",
+    "src/components/units/commnunity/community.styles.tx"
   ],
   "exclude": ["node_modules"]
 }
