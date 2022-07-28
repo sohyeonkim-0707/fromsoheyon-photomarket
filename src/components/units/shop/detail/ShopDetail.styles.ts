@@ -93,6 +93,14 @@ export const BuyBtn = styled.button`
   }
 `;
 
+export const BottomWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 1px solid red; */
+`;
+
 export const BackBtn = styled.button`
   width: 230px;
   height: 50px;
@@ -113,4 +121,12 @@ export const BackBtn = styled.button`
     background-color: #184124;
     color: #ffffff;
   }
+`;
+
+export const EditBtn = styled(BackBtn)`
+  background-color: white;
+  color: black;
+`;
+export const deleteBtn = styled(BackBtn)`
+  margin-left: 31px;
 `;

@@ -1,6 +1,6 @@
 import * as S from "./ShopDetail.styles";
 
-export default function ShopDetailUI() {
+export default function ShopDetailUI(props) {
   return (
     <S.Container>
       <S.Wrapper>
@@ -10,18 +10,27 @@ export default function ShopDetailUI() {
 
         <S.right>
           <S.Inner01>
-            <S.Title>August</S.Title>
-            <S.Remark>Lichterfelde, Berlin, Germany, 2020</S.Remark>
+            <S.Title>{props.data?.fetchUseditem?.name}</S.Title>
+            <S.Remark>{props.data?.fetchUseditem?.remark}</S.Remark>
             <S.Size>A1/ 594mm*841mm</S.Size>
-            <S.Price>1,000원</S.Price>
+            <S.Price>{props.data?.fetchUseditem?.price}</S.Price>
           </S.Inner01>
           <S.Inner>
-            <S.BuyBtn>Buy here</S.BuyBtn>
+            <S.BuyBtn onClick={props.onClickMoveToCart}>Buy here</S.BuyBtn>
           </S.Inner>
         </S.right>
       </S.Wrapper>
-
-      <S.BackBtn>Back to Shop</S.BackBtn>
+      <S.BottomWrapper>
+        <S.BackBtn onClick={props.onClickMoveToList}>Back to Shop</S.BackBtn>
+        <div>
+          <S.EditBtn type="button" onClick={props.onClickMoveProductEdit}>
+            Edit
+          </S.EditBtn>
+          <S.deleteBtn type="button" onClick={props.onClickDelete}>
+            Delete
+          </S.deleteBtn>
+        </div>
+      </S.BottomWrapper>
     </S.Container>
   );
 }
