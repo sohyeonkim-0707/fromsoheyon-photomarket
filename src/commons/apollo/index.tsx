@@ -1,4 +1,4 @@
-]import {
+import {
   ApolloProvider,
   ApolloClient,
   ApolloLink,
