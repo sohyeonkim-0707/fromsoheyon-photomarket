@@ -62,7 +62,7 @@ export default function ShopWriteUI(props: any) {
             }
             isActive={props.formState.isValid}
           >
-            {props.isEdit ? "Edit" : "Submit"}
+            {props.isEdit ? "Submit" : "Edit"}
           </S.SubmitBtn>
           <S.CancleBtn type="button">Cancle</S.CancleBtn>
         </div>

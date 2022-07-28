@@ -40,7 +40,7 @@ export default function ShopWrite(props: IShopWriteProps) {
     }
   };
 
-  // 상품수정하기
+  // 📌 상품수정하기
   const onClcikEditProduct = () => {};
 
   return (
