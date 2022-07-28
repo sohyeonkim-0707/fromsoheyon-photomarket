@@ -6,7 +6,7 @@ export const Container = styled.main`
   margin: 0 auto;
 `;
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
   /* border: 1px solid red; */
